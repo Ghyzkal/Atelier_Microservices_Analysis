@@ -1,0 +1,40 @@
+/* Résumé de l'architecture */
+
+I. Projet parent "microservice-analysis-archi"
+    Il s'agit du dépôt github (repository) pour le rendu de projet.
+    Il contient plusieurs modules.
+    Chaque module est un projet à part entier maven.
+
+II. Modules
+    a. "modeleAPI"
+        - On analyse les méta-données du post JSON afin de gérer les accès à ce modèle.
+        - Stockage des modèles, envoie d'un fichier en POST.
+        - Récupération du fichier puis stockage dans un dossier physique
+        - Stockage dans la BDD du chemin parent, du nom du fichier etc..
+        - Recupération du fichier dans dossier physique pour envoie sous demande utilisateur
+        -
+
+    b. "userAPI"
+        - Gestion des comptes utilisateurs
+
+    c. "sessionAPI"
+        - Créer une session de travail à chaque fois que l'utilisateur se connecte (Create)
+        - La session existe le temps que l'utilisateur réalise ses opérations (Delete)
+
+    d. "gatewayAPI"
+        - Fait office de controlleur
+        - Doit vérifier si l'utilisateur existe (Appel domaine utilisateur)
+        - Appel l'annuaire pour vérifier si la requete existe
+        - Oriente vers le domaine adéquat
+        - On doit gérer les threads pour eviter requete bloquante avec notif en parallele
+
+
+    e. "analyseAPI"
+        - Liée aux éléments métiers de l'application principale (travaux sur les BPMN)
+        - Bloque une session de travail pour un modele
+        - Inscrit un résultat
+
+    f. "annuaireAPI"
+        - Repertorie toutes actions et requetes possible par domaine (API)
+        - Recupère la liste de ses actions a chaque API (répertoire dynamique)
+        - Récupération via la requete OPTIONS

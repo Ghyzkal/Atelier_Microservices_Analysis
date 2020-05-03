@@ -1,0 +1,47 @@
+/****** Tutoriels ******/
+- Java Spark API Rest Server
+http://www.the-lazy-dev.com/fr/spark-pour-les-debutants-creer-des-api-rest-full-avec-java-et-mongodb/
+htt ://sparkjava.com/tutorials/
+http://sparkjava.com/documentation#routes
+https://www.mscharhag.com/java/building-rest-api-with-spark
+http://www.baeldung.com/spark-framework-rest-api
+https://community.filemaker.com/docs/DOC-8871
+
+- Unirest API Rest Client
+http://unirest.io/java.html
+http://www.baeldung.com/unirest
+
+- MongoDB pour macOS
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+
+- MongoDB pour Windows
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+
+
+/****** Requête HTTP *******/
+- Tutoriel OpenClassrooms
+https://openclassrooms.com/courses/les-requetes-http
+
+/****** Tester les requêtes HTTP pour API ******/
+- Adresse par défaut
+http://localhost:4567/
+
+- Chrome : Postman
+https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop
+
+- Firefox : RESTClient
+https://addons.mozilla.org/fr/firefox/addon/restclient/
+
+- POST Json
+{
+"attribut_classe"  = "valeur_attrtibut",
+"attribut_classe2" = "valeur_attrtibut2"
+}
+
+
+/****** MongoDB ******/
+- Lancer MongoDB (ligne de commande)
+net start MongoDB
+
+- Arreter MongoDB
+net stop MongoDB
